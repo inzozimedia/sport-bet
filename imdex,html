@@ -119,8 +119,8 @@
 
     <script>
         function redirectToAffiliate() {
-            // Replace the URL below with your actual 1xBet affiliate link
-            window.location.href = "https://your-affiliate-link.com";
+            // Your 1xBet affiliate link
+            window.location.href = "https://affpa.top/L?tag=d_3672594m_97c_&site=3672594&ad=97&r=blog";
         }
     </script>
 </body>
