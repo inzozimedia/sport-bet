@@ -1,1 +1,127 @@
-trying
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your 1xBet Affiliate Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        article {
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #ff5722;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your 1xBet Affiliate Site</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Bet Smart with 1xBet</h2>
+        <p>Join 1xBet today and get amazing bonuses!</p>
+        <button onclick="redirectToAffiliate()">Join Now</button>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>This site is dedicated to providing the best betting tips and promotions for 1xBet users.</p>
+    </section>
+
+    <section id="blog">
+        <h2>Latest Posts</h2>
+        <article>
+            <h3>Top 5 Betting Tips</h3>
+            <p>Learn the top 5 tips to maximize your betting success!</p>
+            <a href="#">Read More</a>
+        </article>
+        <article>
+            <h3>Understanding Odds</h3>
+            <p>Everything you need to know about betting odds.</p>
+            <a href="#">Read More</a>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Affiliate Site | <a href="#privacy-policy">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        function redirectToAffiliate() {
+            // Replace the URL below with your actual 1xBet affiliate link
+            window.location.href = "https://your-affiliate-link.com";
+        }
+    </script>
+</body>
+</html>
