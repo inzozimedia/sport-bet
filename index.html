@@ -3,81 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your 1xBet Affiliate Site</title>
+    <title>IMZOZI MED WEB /BET</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #e0f7fa; /* Light cyan */
+            color: #333;
         }
 
         header {
-            background-color: #333;
+            background-color: #1a237e; /* Indigo */
             color: #fff;
-            padding: 15px 0;
+            padding: 20px 0;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         header h1 {
             margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
         }
 
         nav ul {
             list-style: none;
             padding: 0;
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
         }
 
         nav ul li {
-            display: inline;
-            margin-right: 10px;
+            margin: 0 15px;
         }
 
         nav ul li a {
-            color: #fff;
+            color: #bbdefb; /* Light blue */
             text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #90caf9; /* Lighter blue */
         }
 
         section {
-            padding: 20px;
-            margin: 20px 0;
-            background-color: #fff;
-            border-radius: 8px;
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
-            color: #333;
+            color: #0d47a1; /* Dark blue */
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            text-align: center;
         }
 
         article {
-            margin-bottom: 15px;
+            margin-bottom: 25px;
+            background-color: #e3f2fd; /* Very light blue */
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        article h3 {
+            margin-top: 0;
+            color: #1565c0; /* Medium blue */
+        }
+
+        article p {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        article a {
+            color: #0288d1; /* Bright blue */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        article a:hover {
+            text-decoration: underline;
         }
 
         footer {
-            background-color: #333;
+            background-color: #1a237e; /* Indigo */
             color: #fff;
             text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
+            padding: 15px 0;
+            margin-top: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, #1a237e 30%, transparent 70%);
+            transform: rotate(45deg);
+            opacity: 0.2;
         }
 
         button {
-            background-color: #ff5722;
+            background-color: #0288d1; /* Bright blue */
             color: #fff;
             border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.2em;
             cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+            display: block;
+            margin: 20px auto;
         }
 
         button:hover {
-            background-color: #e64a19;
+            background-color: #0277bd; /* Slightly darker blue */
+            transform: translateY(-3px);
+        }
+
+        button:active {
+            transform: translateY(-1px);
+        }
+
+        /* Reflection Effect */
+        h1 {
+            position: relative;
+        }
+
+        h1::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            color: rgba(255, 255, 255, 0.4);
+            transform: scaleY(-1);
+            transform-origin: top;
+            opacity: 0.5;
+            filter: blur(2px);
+        }
+
+        footer p {
+            z-index: 1;
+            position: relative;
+            margin: 0;
+        }
+
+        footer a {
+            color: #bbdefb;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Your 1xBet Affiliate Site</h1>
+        <h1 data-text="Welcome to Your 1xBet Affiliate Site">Welcome to INZOZI MED WEB /BET</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -89,8 +198,8 @@
     </header>
 
     <section id="home">
-        <h2>Bet Smart with 1xBet</h2>
-        <p>Join 1xBet today and get amazing bonuses!</p>
+        <h2>Bet Smart in Betting</h2>
+        <p>Bet from today and get amazing bonuses!</p>
         <button onclick="redirectToAffiliate()">Join Now</button>
     </section>
 
@@ -120,7 +229,7 @@
     <script>
         function redirectToAffiliate() {
             // Your 1xBet affiliate link
-            window.location.href = "https://affpa.top/L?tag=d_3672594m_97c_&site=3672594&ad=97&r=blog";
+            window.location.href = "https://affpa.top/L?tag=d_3672594m_97c_&site=3672594&ad=97&r=sport";
         }
     </script>
 </body>
